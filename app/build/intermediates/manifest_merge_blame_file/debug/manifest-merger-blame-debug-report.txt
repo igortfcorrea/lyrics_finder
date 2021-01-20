@@ -1,0 +1,63 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="br.com.igor.lyrics_finder"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:7:5-26:19
+14        android:name="br.com.igor.lyrics_finder.AppApplication"
+14-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:14:9-39
+15        android:allowBackup="true"
+15-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:8:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.3.2] C:\Users\igor.correia\.gradle\caches\transforms-2\files-2.1\e9cae1276eb87ac91cfc6d19c4b01200\core-1.3.2\AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:9:9-43
+20        android:label="@string/app_name"
+20-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:10:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:11:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:12:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.Lyrics_finder" >
+24-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:13:9-51
+25        <activity
+25-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:15:9-16:69
+26            android:name="br.com.igor.lyrics_finder.ui.view.LyricsActivity"
+26-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:15:19-57
+27            android:theme="@style/Theme.Lyrics_finder.NoActionBar" />
+27-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:16:13-67
+28        <activity
+28-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:17:9-25:20
+29            android:name="br.com.igor.lyrics_finder.ui.view.MainActivity"
+29-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:18:13-49
+30            android:theme="@style/Theme.Lyrics_finder.NoActionBar" >
+30-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:19:13-67
+31            <intent-filter>
+31-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:20:13-24:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:21:17-69
+32-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:21:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:23:17-77
+34-->C:\Users\igor.correia\StudioProjects\lyrics_finder\app\src\main\AndroidManifest.xml:23:27-74
+35            </intent-filter>
+36        </activity>
+37    </application>
+38
+39</manifest>

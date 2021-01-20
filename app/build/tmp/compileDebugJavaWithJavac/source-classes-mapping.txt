@@ -1,0 +1,6 @@
+br/com/igor/lyrics_finder/databinding/ActivityLyricsBinding.java
+ br.com.igor.lyrics_finder.databinding.ActivityLyricsBinding
+br/com/igor/lyrics_finder/BuildConfig.java
+ br.com.igor.lyrics_finder.BuildConfig
+br/com/igor/lyrics_finder/databinding/ActivityMainBinding.java
+ br.com.igor.lyrics_finder.databinding.ActivityMainBinding

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\igor.correia\\StudioProjects\\lyrics_finder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\igor.correia\\StudioProjects\\lyrics_finder\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\igor.correia\\StudioProjects\\lyrics_finder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_lyrics.xml",
+        "source": "C:\\Users\\igor.correia\\StudioProjects\\lyrics_finder\\app\\src\\main\\res\\layout\\activity_lyrics.xml"
+    }
+]

@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lyrics_finder"
         android:name=".AppApplication">
-        <activity android:name=".ui.view.LyricsActivity"
+        <activity android:name=".presentation.view.LyricsActivity"
             android:theme="@style/Theme.Lyrics_finder.NoActionBar"/>
         <activity
-            android:name=".ui.view.MainActivity"
+            android:name=".presentation.view.MainActivity"
             android:theme="@style/Theme.Lyrics_finder.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

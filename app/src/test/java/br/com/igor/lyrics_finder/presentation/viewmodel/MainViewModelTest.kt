@@ -1,4 +1,4 @@
-package br.com.igor.lyrics_finder.ui.viewmodel
+package br.com.igor.lyrics_finder.presentation.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
@@ -10,7 +10,6 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.test.TestCoroutineDispatcher
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.After
-import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

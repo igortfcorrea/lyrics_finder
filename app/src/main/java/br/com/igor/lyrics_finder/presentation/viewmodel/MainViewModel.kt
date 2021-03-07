@@ -3,8 +3,8 @@ package br.com.igor.lyrics_finder.presentation.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import br.com.igor.lyrics_finder.domain.entities.LyricsEntity
 import br.com.igor.lyrics_finder.domain.usecases.FetchLyrics
+import br.com.igor.lyrics_finder.presentation.models.LyricsUIModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collect
@@ -14,7 +14,7 @@ class MainViewModel(
     private val coroutineDispatcher: CoroutineDispatcher,
     private val fetchLyrics: FetchLyrics) : ViewModel() {
 
-    val lyrics = MutableLiveData<LyricsEntity>()
+    val lyrics = MutableLiveData<LyricsUIModel>()
     val loading = MutableLiveData<Boolean>()
     val message = MutableLiveData<String>()
 

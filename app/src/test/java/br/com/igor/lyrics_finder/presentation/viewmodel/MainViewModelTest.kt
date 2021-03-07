@@ -2,8 +2,8 @@ package br.com.igor.lyrics_finder.presentation.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
-import br.com.igor.lyrics_finder.domain.entities.LyricsEntity
 import br.com.igor.lyrics_finder.domain.usecases.FetchLyrics
+import br.com.igor.lyrics_finder.presentation.models.LyricsUIModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -32,7 +32,7 @@ class MainViewModelTest {
     @Mock
     lateinit var messageObserver: Observer<String>
     @Mock
-    lateinit var lyricsObserver: Observer<LyricsEntity>
+    lateinit var lyricsObserver: Observer<LyricsUIModel>
 
     private val coroutineDispatcher = TestCoroutineDispatcher()
 
@@ -57,7 +57,7 @@ class MainViewModelTest {
     @Test
     fun shouldUpdateLyricsValue() {
         coroutineDispatcher.runBlockingTest {
-            val fakeResult = LyricsEntity("any_title", "any_lyrics")
+            val fakeResult = LyricsUIModel("any_title", "any_lyrics")
             val fakeFlow = flow {
                 emit(fakeResult)
             }
@@ -75,7 +75,7 @@ class MainViewModelTest {
     fun shouldCatchTheException() {
         coroutineDispatcher.runBlockingTest {
             val fakeMessage = "fakeMessage"
-            val fakeFlow: Flow<LyricsEntity> = flow {
+            val fakeFlow: Flow<LyricsUIModel> = flow {
                 throw Exception(fakeMessage)
             }
             `when`(fetchLyrics.fetchLyrics("any_artist", "any_song")).thenReturn(fakeFlow)

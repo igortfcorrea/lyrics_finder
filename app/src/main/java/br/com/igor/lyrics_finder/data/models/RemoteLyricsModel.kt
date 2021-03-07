@@ -9,8 +9,8 @@ class RemoteLyricsModel (
     @Expose var title: String?,
     @SerializedName("lyrics")
     @Expose var lyrics: String?
-) {
-    fun toEntity() : LyricsEntity {
-        return LyricsEntity(title, lyrics)
-    }
+)
+
+fun RemoteLyricsModel.toEntity() : LyricsEntity {
+    return LyricsEntity(title, lyrics)
 }

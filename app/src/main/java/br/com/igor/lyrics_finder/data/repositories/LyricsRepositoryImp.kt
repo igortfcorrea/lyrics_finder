@@ -1,5 +1,6 @@
 package br.com.igor.lyrics_finder.data.repositories
 
+import br.com.igor.lyrics_finder.data.models.toEntity
 import br.com.igor.lyrics_finder.domain.entities.LyricsEntity
 import br.com.igor.lyrics_finder.infra.http.ApiRoutes
 import kotlinx.coroutines.flow.Flow

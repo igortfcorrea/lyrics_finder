@@ -9,7 +9,7 @@ import androidx.core.view.isVisible
 import androidx.core.widget.doOnTextChanged
 import br.com.igor.lyrics_finder.R
 import br.com.igor.lyrics_finder.databinding.ActivityMainBinding
-import br.com.igor.lyrics_finder.domain.entities.LyricsEntity
+import br.com.igor.lyrics_finder.presentation.models.LyricsUIModel
 import br.com.igor.lyrics_finder.presentation.viewmodel.MainViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         binding.songEditText.isEnabled = false
     }
 
-    private fun navigateToLyricsActivity(lyrics: LyricsEntity?) {
+    private fun navigateToLyricsActivity(lyrics: LyricsUIModel?) {
         val intent = Intent(this, LyricsActivity::class.java)
         intent.putExtra("lyrics", lyrics)
         startActivity(intent)

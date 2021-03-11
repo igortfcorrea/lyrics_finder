@@ -9,6 +9,9 @@
 - Koin
 - Retrofit
 - GSON
+- JUnit
+- Mockito
+- Espresso
 
 # Author
 - [Igor Correa](https://www.linkedin.com/in/igor-thiago-correa-filho-b16741178/)
